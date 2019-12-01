@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace空间就是下面java包下面的包名-->
+<mapper  namespace="csdnMybatis">
+    <select id="getWebsiteById" resultType="csdnMybatis.Twebsites">
+        <!--下面的websites是表名字-->
+        SELECT * FROM websites WHERE id = #{id};
+    </select>
+
+</mapper>
